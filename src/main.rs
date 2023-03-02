@@ -10,7 +10,6 @@ const INITIAL_DATE: &str = "2023-03-02 16:30:48.238795 -03:00";
 fn get_number_weeks() -> (String, String, i64) {
     let initial_date: DateTime<Local> = INITIAL_DATE.parse().unwrap();
     let now: DateTime<Local> = Local::now();
-    // let now: DateTime<Local> = Local::now();
     println!("Initial date: {}", initial_date);
     let diff = now - initial_date;
     let date_str: String = now.format("%Y-%m-%d %H:%M:%S").to_string();
